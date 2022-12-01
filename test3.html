@@ -1,0 +1,44 @@
+<!--
+ZADATAK 3:
+Napisati CSS kod tako da link izgleda kao na slici.
+-->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Zadatak 3</title>
+    <style type="text/css">
+      a {
+        
+        margin:0px 10px;
+        text-transform: uppercase;
+        color:#4e1364;
+        font-size: 16px;
+        font-weight: 550;
+        text-decoration:none;
+        cursor: help;
+      }
+      
+      a::before{
+        margin-right: 3px;
+        content: "\003E";
+        font-weight: 900;
+        cursor: help;
+      }
+        
+      a::after{
+        margin-left: 3px;
+        content: "\003C";
+        font-weight: bold;
+        cursor: help;
+      }
+
+      /* Ovde uneti izmene. Ne praviti izmene u HTML kodu */
+    </style>
+  </head>
+  <body>
+      <img src="images/link.jpg">
+      <br />
+      <a href="zadatak2.html">Check documentation</a>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!--
+ZADATAK 2:
+Implementirati setup() funkciju koja registruje click event i implementira logiku:
+Kada je (X) dugme pritisnuto, odgovarajuci parent div element treba biti izbrisan.
+-->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Zadatak 2</title>    
+  </head>
+  <body>
+    <div class="image">
+      <img src="images/marko_nikolic.jpg">
+      <button class="remove">X</button>
+    </div>
+    <div class="image">
+      <img src="images/svetlana_bojkovic.jpg">
+      <button class="remove">X</button>
+    </div>
+    <div class="image">
+      <img src="images/boris_komnenic.jpg">
+      <button class="remove">X</button>
+    </div>
+    <div class="image">
+      <img src="images/lidija_vukicevic.jpg">
+      <button class="remove">X</button>
+    </div>
+    <script>
+
+    function setup(){
+      let dugme = document.getElementsByClassName('remove');
+    
+     
+      for (let i = 0; i < dugme.length; i++) {
+        dugme[i].addEventListener('click', function() {
+          this.parentNode.remove();
+        });
+      }}
+      setup();
+    </script>
+  </body>
+</html>

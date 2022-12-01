@@ -1,0 +1,28 @@
+<!--
+ZADATAK 1:
+Doraditi HTML i napisati JS funkciju koja transformise vrednost iz input polja.
+-->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Zadatak 1</title>
+  </head>
+  <body>
+    Date (MM/DD/YYYY):
+    <input class="datum" type="date" onchange="getInputValue()"/>
+    <br />
+    Formated date (YYYYMMDD):
+    <p class="prikaz"></p>
+    
+    <script>
+   
+    function getInputValue() {
+       
+        let inputValue = document.getElementsByClassName("datum").value;
+         const inicijalniDatum = new Date(inputValue);
+         document.getElementsByClassName("prikaz").innerHTML = `${inicijalniDatum.getFullYear()} ${inicijalniDatum.getMonth() + 1} ${inicijalniDatum.getDate()}`
+      };
+    </script>
+  </body>
+</html>

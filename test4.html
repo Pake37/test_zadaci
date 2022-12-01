@@ -1,0 +1,43 @@
+<!--
+ZADATAK 4:
+Vidi sliku images/zadatak4.png
+
+Napraviti Responsive Grid View stranicu sa elementima kao na slici.
+
+Na sirinama manjim od 360px prikazati slike glimaca u jednoj koloni (tj. 4 reda).
+Na sirinama vecim od 360px, a manjim od 720px prikazati slike glumaca u dve kolone (izgled kao na slici zadatak4.png)
+Na sirinama vecim od 720px, prikazati slike glimaca u jednom redu (tj. 4 kolone)
+
+Koristiti slike glimaca iz images foldera.
+Takodje, prikazati imena glumaca i stilizovati kao na slici zadatak4.png.
+-->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Zadatak 4</title>
+    <style>
+      .container{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap:10px;
+      }
+    </style>
+  </head>
+  <body>
+  <div class="container">
+    <div class="image">
+    <img src="images\boris_komnenic.jpg" >
+    </div>
+    <div class="image">
+    <img src="images\lidija_vukicevic.jpg" >
+    </div>
+    <div class="image">
+    <img src="images\marko_nikolic.jpg" >
+    </div>
+    <div class="image">
+    <img src="images\svetlana_bojkovic.jpg" >
+    </div>
+  </div>
+  </body>
+</html>
